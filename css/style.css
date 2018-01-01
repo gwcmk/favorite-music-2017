@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Verdana, sans-serif;
+}
+
+small {
+  display: block;
+  font-family: monospace;
+}
+
+.header {
+  position: relative;
+  width: 90vw;
+  margin: 30px 5vw;
+}
+
+.cover-art-row, .webm-row {
+  display: flex;
+  overflow: hidden;
+  opacity: 0.65;
+}
+
+.cover-art-row img {
+  height: 9vw;
+  max-width: 9vw;
+}
+
+.webm-row video {
+  height: 18vw;
+  max-width: 32vw;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  margin: 0;
+  padding: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+  font-size: 3vw;
+  margin: 0 0 20px 0;
+}
+
+.header-text small {
+  font-size: 1vw;
+}
+
+.section-header {
+  padding: 30px 0;
+  border-bottom: 1px solid black;
+}
+
+.section-header h1 span{
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.reviews {
+  margin: 0 10vw;
+}
+
+.reviews .review {
+  padding: 30px 0;
+  border-bottom: 1px solid black;
+}
+
+.reviews .review-info {
+  display: flex;
+  position: relative;
+}
+
+.reviews .review-info img {
+  height: 15vw;
+  max-width: 15vw;
+}
+
+.reviews .review-info .artist-info {
+  position: absolute;
+  top: 50%;
+  left: 20vw;
+  transform: translateY(-50%);
+}
+
+.reviews .review-info .artist-info span {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.reviews .review-text {
+  margin-left: 20vw;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    font-size: 1.1vh;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
+  .header {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .cover-art-row img {
+    height: 20vw;
+    max-width: 20vw;
+  }
+
+  .header-text {
+    padding: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 3.5rem;
+    margin: 0 0 20px 0;
+  }
+
+  .header-text small {
+    font-size: 2rem;
+  }
+
+  .reviews .review-info {
+    margin-bottom: 30px;
+  }
+
+  .reviews .review-info img {
+    height: 10vh;
+    max-width: 10vh;
+  }
+
+  .reviews .review-info .artist-info {
+    position: absolute;
+    top: 50%;
+    left: 12vh;
+    transform: translateY(-50%);
+  }
+
+  .reviews .review-info .artist-info span {
+    background-color: transparent;
+    color: black;
+    padding: 0;
+  }
+
+  .reviews .review-text {
+    margin-left: 0;
+  }
+}
