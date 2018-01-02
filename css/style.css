@@ -64,7 +64,7 @@ small {
   padding: 20px;
 }
 
-.reviews {
+.reviews, .lists {
   margin: 0 10vw;
 }
 
@@ -100,13 +100,26 @@ small {
   margin-left: 20vw;
 }
 
+.lists .section-header {
+  padding: 30px 0;
+  border-bottom: 0;
+}
+
+.lists-container {
+  display: flex;
+}
+
+.list {
+  width: 50%;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   body {
     font-size: 1.1vh;
   }
 
   p {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
   .header {
@@ -156,5 +169,13 @@ small {
 
   .reviews .review-text {
     margin-left: 0;
+  }
+  
+  .lists-container {
+    display: block;
+  }
+
+  .list {
+    width: 100%;
   }
 }
